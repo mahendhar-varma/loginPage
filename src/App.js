@@ -8,13 +8,13 @@ import ProtectedRoute from "./components/ProtectedRoute";
 function App() {
   return (
     <Routes>
-      <Route exact path="/" element={<ProtectedRoute />}>
-        <Route exact path="/" element={<Home />} />
+      <Route exact path="/loginPage" element={<ProtectedRoute />}>
+        <Route exact path="/loginPage" element={<Home />} />
       </Route>
-      <Route exact path="/details" element={<ProtectedRoute />}>
-        <Route exact path="/details" element={<Details />} />
+      <Route exact path="/loginPage/details" element={<ProtectedRoute />}>
+        <Route exact path="/loginPage/details" element={<Details />} />
       </Route>
-      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/loginPage/login" element={<Login />} />
     </Routes>
   );
 }
