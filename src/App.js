@@ -14,7 +14,7 @@ function App() {
       <Route exact path="/loginPage/details" element={<ProtectedRoute />}>
         <Route exact path="/loginPage/details" element={<Details />} />
       </Route>
-      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/loginPage/login" element={<Login />} />
     </Routes>
   );
 }
