@@ -5,7 +5,7 @@ const Details = () => {
 
   const toBack = (event) => {
     event.preventDefault();
-    history("/");
+    history("/loginPage");
   };
 
   return (

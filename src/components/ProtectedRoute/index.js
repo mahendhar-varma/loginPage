@@ -5,7 +5,7 @@ const ProtectedRoute = () => {
   const jwtToken = Cookies.get("jwt_token");
 
   if (jwtToken === undefined) {
-    return <Navigate to="/login" />;
+    return <Navigate to="/loginPage/login" />;
   }
 
   return <Outlet />;

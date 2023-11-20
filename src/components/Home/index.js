@@ -5,7 +5,7 @@ const Home = () => {
   const history = useNavigate();
   const toStart = (event) => {
     event.preventDefault();
-    history("/details");
+    history("/loginPage/details");
   };
 
   return (

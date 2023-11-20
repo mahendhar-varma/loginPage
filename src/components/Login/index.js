@@ -42,11 +42,11 @@ class Login extends Component {
 
     const token = Cookies.get("jwt_token");
     if (token !== undefined) {
-      return <Navigate to="/" />;
+      return <Navigate to="/loginPage" />;
     }
 
     if (isLoggedIn === true) {
-      return <Navigate to="/" />;
+      return <Navigate to="/loginPage" />;
     }
 
     return (
